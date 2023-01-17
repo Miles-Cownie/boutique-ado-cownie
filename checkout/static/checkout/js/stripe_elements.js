@@ -90,8 +90,8 @@ form.addEventListener('submit', function(ev) {
                     country: $.trim(form.country.value),
                     postal_code: $.trim(form.postcode.value),
                     state: $.trim(form.county.value),
-                    }
-            }
+                }
+            },
         }).then(function(result) {
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');
